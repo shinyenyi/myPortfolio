@@ -1,0 +1,112 @@
+html {
+  display: block;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+
+.header {
+  background: #3c3a39;
+  display: flex;
+}
+
+.nav-bar {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+}
+
+.name {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  color: #fff;
+}
+
+.menu-icon {
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.greetings {
+  padding-right: 24px;
+  padding-left: 24px;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  width: 100%;
+}
+
+.my-job-title {
+  margin-bottom: 3px;
+  padding-right: 24px;
+  padding-left: 24px;
+  font-family: 'Roboto', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #fff5e1;
+  width: 100%;
+}
+
+.my-job-description {
+  padding-right: 45px;
+  padding-left: 24px;
+  margin-bottom: 15px;
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 590px;
+  background: #1c1a19;
+  background-image: url(images/Illustration.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-icon-links {
+  max-width: 250px;
+  padding-left: 24px;
+  display: flex;
+  justify-content: space-between;
+}

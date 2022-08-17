@@ -2,7 +2,7 @@
 
 # My Portfolio
 
-> Description the project.
+> A webpage where I can display my work and competence to potential recruiters with the intent of getting employed
 
 
 ## Built With

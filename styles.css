@@ -125,8 +125,7 @@ body {
 }
 
 .works {
-  /* background-color: #e5e5e5; */
-  background-color: #fff;
+  background-color: #e5e5e5;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -235,7 +234,6 @@ body {
 .multi-post-stories-button {
   border: none;
   padding: 12px;
-  gap: 10px;
   width: 124px;
   height: 48px;
   background: #ff6b00;
@@ -250,6 +248,36 @@ body {
   margin-bottom: 24px;
 }
 
+.multi-post-stories-button:disabled,
+button[disabled] {
+  padding: 12px;
+  background: #f4f1f0;
+  border: none;
+  color: #5B5957;
+}
+
+.multi-post-stories-button:enabled,
+button[enabled] {
+  padding: 12px;
+  background: #ff6b00;
+  border: none;
+  color: #fff;
+}
+
+.multi-post-stories-button:hover {
+  padding: 0;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.multi-post-stories-button:active {
+  padding: 12px;
+  background: #ff6b00;
+  border: none;
+  color: #fff;
+}
+
 .works-project {
   margin-bottom: 24px;
   padding-top: 84px;
@@ -259,7 +287,7 @@ body {
   background-size: cover;
 }
 
-.works-project img{
+.works-project img {
   width: 100%;
   height: 100%;
 }
@@ -317,7 +345,6 @@ body {
 .works-project-button {
   border: none;
   padding: 12px;
-  gap: 10px;
   width: 100%;
   height: 48px;
   background: #ff6b00;
@@ -329,4 +356,174 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
+}
+
+.works-project-button:disabled,
+button[disabled] {
+  padding: 12px;
+  background: #f4f1f0;
+  border: none;
+  color: #5B5957;
+}
+
+.works-project-button:enabled,
+button[enabled] {
+  padding: 12px;
+  background: #ff6b00;
+  border: none;
+  color: #fff;
+}
+
+.works-project-button:hover {
+  padding: 0;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.works-project-button:active {
+  padding: 12px;
+  background: #ff6b00;
+  border: none;
+  color: #fff;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: #1c1a19;
+  background-image: url(images/Frame.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom 1500px;
+}
+
+.about-me-title {
+  margin-top: 120px;
+  font-family: 'Crete Round' serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  margin-bottom: 24px;
+}
+
+.about-me-content {
+  font-family: 'Inter' sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  margin-bottom: 24px;
+}
+
+.about-me-button {
+  border: none;
+  padding: 12px;
+  width: fit-content;
+  height: 48px;
+  background: #ff6b00;
+  font-family: 'Inter' sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.about-me-button:hover {
+  padding: 12px;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.about-me-button:active {
+  padding: 12px;
+  background: #ff6b00;
+  border: none;
+  color: #fff;
+}
+
+.about-me-button:disabled,
+button[disabled] {
+  padding: 12px;
+  background: #f4f1f0;
+  border: none;
+  color: #5B5957;
+}
+
+.about-me-button:enabled,
+button[enabled] {
+  padding: 12px;
+  background: #ff6b00;
+  border: none;
+  color: #fff;
+}
+
+.about-me-line {
+  margin-top: 209px;
+  border: 1px solid #fff;
+  margin-bottom: 136px;
+}
+
+.about-me-lists {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-list-header {
+  font-family: 'Inter' sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 44px;
+}
+
+.about-me-list-item {
+  font-family: 'Inter' sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.star {
+  width: 18px;
+  height: 18px;
+  background: #ff6b00;
+  transform: rotate(-45deg);
+  margin-right: 12px;
+}
+
+.square {
+  width: 18px;
+  height: 18px;
+  background: #FF6B00;
+  margin-right: 12px;
+}
+
+.circle {
+  width: 18px;
+  height: 18px;
+  background: #FF6B00;
+  border-radius: 150px;
+  margin-right: 12px;
 }

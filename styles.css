@@ -35,12 +35,37 @@ body {
   align-items: baseline;
 }
 
+.my-job-title,
+.name a {
+  font-family: 'Roboto', sans-serif;
+}
+
+.greetings,
+.recent-works-title,
+.multi-post-stories-title,
+.works-project-title,
+.about-me-title {
+  font-family: 'Crete Round', serif;
+}
+
+.multi-post-stories-content,
+.multi-post-stories-languages .language p,
+.multi-post-stories-button,
+.works-project-content,
+.works-project-languages .language,
+.works-project-button,
+.about-me-content,
+.about-me-button,
+.about-me-list-header,
+.about-me-list-item {
+  font-family: 'Roboto', sans-serif;
+}
+
 .name a {
   text-decoration: none;
   padding: 10px;
   width: 100%;
   height: 100%;
-  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -64,7 +89,6 @@ body {
 .greetings {
   padding-right: 24px;
   padding-left: 24px;
-  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -78,7 +102,6 @@ body {
   margin-bottom: 3px;
   padding-right: 24px;
   padding-left: 24px;
-  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -90,10 +113,10 @@ body {
 }
 
 .my-job-description {
+  font-family: 'Poppins', sans-serif;
   padding-right: 45px;
   padding-left: 24px;
   margin-bottom: 15px;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -153,7 +176,6 @@ body {
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
-  font-family: 'Crete Round' serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,7 +207,6 @@ body {
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  font-family: 'Crete Round' serif;
   display: flex;
   align-items: center;
   color: #091e42;
@@ -195,7 +216,6 @@ body {
 .multi-post-stories-content {
   font-style: normal;
   font-weight: 400;
-  font-family: 'Inter' sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #091e42;
@@ -227,7 +247,6 @@ body {
   font-size: 15px;
   line-height: 20px;
   color: #091e42;
-  font-family: 'Inter' sans-serif;
 }
 
 .multi-post-stories-button {
@@ -244,7 +263,6 @@ body {
   letter-spacing: 0.03em;
   color: #fff;
   margin-bottom: 24px;
-  font-family: 'Inter' sans-serif;
 }
 
 .multi-post-stories-button:disabled,
@@ -300,7 +318,6 @@ button[enabled] {
   margin-left: 16px;
   margin-right: 16px;
   padding-bottom: 12px;
-  font-family: 'Crete Round' serif;
 }
 
 .works-project-content {
@@ -312,7 +329,6 @@ button[enabled] {
   line-height: 24px;
   color: #fff;
   padding-bottom: 12px;
-  font-family: 'Inter' sans-serif;
 }
 
 .works-project-languages {
@@ -338,7 +354,6 @@ button[enabled] {
   font-size: 15px;
   line-height: 20px;
   color: #fff;
-  font-family: 'Inter' sans-serif;
 }
 
 .works-project-button {
@@ -354,7 +369,6 @@ button[enabled] {
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
-  font-family: 'Inter' sans-serif;
 }
 
 .works-project-button:disabled,
@@ -406,7 +420,6 @@ button[enabled] {
   letter-spacing: 0.37px;
   color: #ff6b00;
   margin-bottom: 24px;
-  font-family: 'Crete Round' serif;
 }
 
 .about-me-content {
@@ -416,7 +429,6 @@ button[enabled] {
   line-height: 24px;
   color: #f4f5f7;
   margin-bottom: 24px;
-  font-family: 'Inter' sans-serif;
 }
 
 .about-me-button {
@@ -432,7 +444,6 @@ button[enabled] {
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
-  font-family: 'Inter' sans-serif;
 }
 
 .about-me-button:hover {
@@ -488,7 +499,6 @@ button[enabled] {
   align-items: center;
   color: #fff;
   margin-bottom: 44px;
-  font-family: 'Inter' sans-serif;
 }
 
 .about-me-list-item {
@@ -501,7 +511,6 @@ button[enabled] {
   text-align: center;
   color: #fff;
   margin-bottom: 32px;
-  font-family: 'Inter' sans-serif;
 }
 
 .star {

@@ -58,7 +58,7 @@ body {
 .about-me-button,
 .about-me-list-header,
 .about-me-list-item {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', serif;
 }
 
 .name a {
@@ -533,3 +533,4 @@ button[enabled] {
   border-radius: 150px;
   margin-right: 12px;
 }
+

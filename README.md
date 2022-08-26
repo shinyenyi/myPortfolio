@@ -41,8 +41,12 @@ clone the project then run: npm install
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/shinyenyi)
+- GitHub: [@shinyenyi](https://github.com/shinyenyi)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/miguel-shinyenyi/)
+
+👤 **Author2**
+
+- GitHub: [@Khaled](https://github.com/Khaled-AlKhateeb)
 
 ## 🤝 Contributing
 

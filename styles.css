@@ -185,7 +185,7 @@ body {
   height: 0;
   margin-top: 24px;
   margin-bottom: 24px;
-  border: 1px solid #212121;
+  border: 1px solid #666;
 }
 
 .multi-post-stories-image {
@@ -241,20 +241,6 @@ body {
   transform: translate(20px);
 }
 
-.multi-post-stories-languages ul li {
-  padding: 10px 12px;
-  margin-right: 12px;
-  width: fit-content;
-  height: 40px;
-  background: #fff;
-  border: 1px solid #8993a4;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #091e42;
-}
-
 .multi-post-stories-button {
   border: none;
   padding: 12px;
@@ -282,7 +268,7 @@ button[disabled] {
 .multi-post-stories-button:enabled,
 button[enabled] {
   padding: 12px;
-  background: #ff6b00;
+  background: #f55800;
   border: none;
   color: #fff;
 }
@@ -296,7 +282,7 @@ button[enabled] {
 
 .multi-post-stories-button:active {
   padding: 12px;
-  background: #ff6b00;
+  background: #e05304;
   border: none;
   color: #fff;
 }
@@ -390,7 +376,7 @@ button[disabled] {
 .works-project-button:enabled,
 button[enabled] {
   padding: 12px;
-  background: #ff6b00;
+  background: #f55800;
   border: none;
   color: #fff;
 }
@@ -404,7 +390,7 @@ button[enabled] {
 
 .works-project-button:active {
   padding: 12px;
-  background: #ff6b00;
+  background: #e05304;
   border: none;
   color: #fff;
 }
@@ -463,7 +449,7 @@ button[enabled] {
 
 .about-me-button:active {
   padding: 12px;
-  background: #ff6b00;
+  background: #e05304;
   border: none;
   color: #fff;
 }
@@ -479,7 +465,7 @@ button[disabled] {
 .about-me-button:enabled,
 button[enabled] {
   padding: 12px;
-  background: #ff6b00;
+  background: #f55800;
   border: none;
   color: #fff;
 }
@@ -618,7 +604,7 @@ button[enabled] {
 
 .contact-form-button:active {
   padding: 12px;
-  background: #ff6b00;
+  background: #e05304;
   border: none;
   color: #fff;
 }
@@ -634,7 +620,7 @@ button[disabled] {
 .contact-form-button:enabled,
 button[enabled] {
   padding: 12px;
-  background: #ff6b00;
+  background: #f55800;
   border: none;
   color: #fff;
 }
@@ -812,27 +798,42 @@ footer {
 
   .recent-works-line {
     width: 100%;
+    max-width: 800px;
     height: 0;
     margin-top: 24px;
     margin-bottom: 24px;
-    border: 1px solid #212121;
+    border: 1px solid #666;
   }
 
-  .works ul {
+  .works .works-grid {
     width: 100%;
     box-sizing: border-box;
     list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    gap: 24px;
+    grid-gap: 24px;
   }
 
-  .multi-post-stories-languages ul {
+  .multi-post-stories-languages .languages {
     list-style: none;
     max-width: 500px;
-    align-items: flex-start;
     display: flex;
-    margin-bottom: 12px;
+    flex-direction: row;
+    margin-bottom: 24px;
+  }
+
+  .multi-post-stories-languages .languages .language {
+    padding: 10px 12px;
+    margin-right: 12px !important;
+    width: fit-content;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #8993a4;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #091e42;
   }
 
   .multi-post-stories-image {
@@ -849,6 +850,7 @@ footer {
     flex-direction: column;
     justify-content: flex-end;
     width: 100%;
+    padding-top: 178px;
   }
 
   .works-project-button {
@@ -907,9 +909,16 @@ footer {
   }
 
   .contact-form-content {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #262626;
+    text-align: left;
     margin: 0;
     padding: 0;
-    flex: 1;
+    flex: 1.4;
   }
 
   .contact-form-inputs {
@@ -919,6 +928,30 @@ footer {
 
   .about-me {
     background-position: right bottom 650px;
+  }
+
+  .about-me-lists {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-me-list-item {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .about-me-list-header {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 35px;
+  }
+
+  footer {
+    border-top: 1px solid #dfe1e6;
+    background: #e5e5e5;
   }
 }
 
@@ -935,8 +968,70 @@ footer {
   }
 
   .about-me {
+    padding-left: 110px;
+    padding-right: 110px;
     background-image: url(images/Frame-destop-size.svg);
     background-repeat: no-repeat;
     background-position: right bottom 650px;
+  }
+
+  .contact-form {
+    padding-left: 110px;
+    padding-right: 110px;
+    background-color: #fff;
+  }
+
+  .my-form {
+    background-color: #fff;
+  }
+
+  .contact-form-content {
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #262626;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    flex: 1.4;
+  }
+
+  .contact-form-inputs {
+    padding-left: 40px;
+    flex: 2;
+  }
+
+  .works {
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .about-me-lists {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-me-list-item {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .about-me-list-header {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 35px;
+  }
+
+  footer {
+    border-top: 1px solid #dfe1e6;
+    background: #e5e5e5;
   }
 }

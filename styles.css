@@ -235,6 +235,12 @@ body {
   margin-bottom: 12px;
 }
 
+.my-job-description:hover,
+.my-job-title:hover,
+.greetings:hover {
+  transform: translate(20px);
+}
+
 .multi-post-stories-languages ul li {
   padding: 10px 12px;
   margin-right: 12px;
@@ -854,6 +860,11 @@ footer {
     padding: 12px;
     text-align: center;
     justify-content: center;
+    transition: 1s ease-in;
+  }
+
+  .works-project:hover {
+    transform: scale(1.1);
   }
 
   .works-project:hover .works-project-title {

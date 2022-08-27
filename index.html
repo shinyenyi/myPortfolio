@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
+  <title>My Portfolio</title>
 </head>
 
 <body>
@@ -14,16 +14,26 @@
     <nav class="nav-bar">
       <span class="name"><a href="#">Miguel</a></span>
       <span class="menu-icon"><img src="images/menu.svg" alt="menu icon"></span>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><img src="images/Icon-Mail.svg" alt="mail icon"></li>
+        </ul>
+      </div>
     </nav>
   </header>
   <section class="headline">
-    <h1 class="greetings">Hey There. I’m Miguel</h1>
-    <p class="my-job-title">I’am a Software Developer</p>
-    <p class="my-job-description">
-      I can help you build a product , feature or website Look through
-      some of my work and experience! If you like what you see and have
-      a project you need coded, don’t hestiate to contact me.
-    </p>
+    <div class="headline-content">
+      <h1 class="greetings">Hey There. <br>I’m Miguel</h1>
+      <p class="my-job-title">I’am a Software Developer</p>
+      <p class="my-job-description">
+        I can help you build a product , feature or website Look through
+        some of my work and experience! If you like what you see and have
+        a project you need coded, don’t hestiate to contact me.
+      </p>
+    </div>
     <div class="social-icon-links">
       <ul>
         <li>
@@ -45,18 +55,17 @@
     </div>
   </section>
   <section class="works">
-    <ul>
+    <ul class="works-grid">
       <li class="works-title">
-        <div>
+        <div class="works-title-container">
           <h1 class="recent-works-title">My Recent Works</h1>
           <div class="recent-works-line"></div>
         </div>
       </li>
       <li class="multi-post-stories">
         <div class="multi-post-stories-image">
-          <img src="images/multi-post-stories.svg" alt="background image">
         </div>
-        <div>
+        <div class="multi-post-stories-container">
           <h1 class="multi-post-stories-title">Multi-Post Stories</h1>
           <p class="multi-post-stories-content">A daily selection of privately
             personalized reads; no accounts or sign-ups required. has been the
@@ -64,11 +73,11 @@
             printer took a standard dummy text.
           </p>
           <div class="multi-post-stories-languages">
-            <ul>
-              <li>css</li>
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
+            <ul class="languages">
+              <li class="language">css</li>
+              <li class="language">html</li>
+              <li class="language">bootstrap</li>
+              <li class="language">Ruby</li>
             </ul>
           </div>
           <button class="multi-post-stories-button">See Project</button>
@@ -90,7 +99,22 @@
         <button class="works-project-button">See Project</button>
       </li>
       <li class="works-project">
-        <h1 class="works-project-title">Profesional Art Printing Data</h1>
+        <h1 class="works-project-title">Data Dashboard Healthcare</h1>
+        <p class="works-project-content">
+          A daily selection of privately personalized reads; no accounts or sign-ups
+          required. has been the industry's standard
+        </p>
+        <div class="works-project-languages">
+          <ul>
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+        </div>
+        <button class="works-project-button">See Project</button>
+      </li>
+      <li class="works-project">
+        <h1 class="works-project-title">Website Protfolio</h1>
         <p class="works-project-content">
           A daily selection of privately personalized reads; no accounts or sign-ups
           required. has been the industry's standard
@@ -120,7 +144,22 @@
         <button class="works-project-button">See Project</button>
       </li>
       <li class="works-project">
-        <h1 class="works-project-title">Profesional Art Printing Data</h1>
+        <h1 class="works-project-title">Data Dashboard Healthcare</h1>
+        <p class="works-project-content">
+          A daily selection of privately personalized reads; no accounts or sign-ups
+          required. has been the industry's standard
+        </p>
+        <div class="works-project-languages">
+          <ul>
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+        </div>
+        <button class="works-project-button">See Project</button>
+      </li>
+      <li class="works-project">
+        <h1 class="works-project-title">Website Protfolio</h1>
         <p class="works-project-content">
           A daily selection of privately personalized reads; no accounts or sign-ups
           required. has been the industry's standard
@@ -146,48 +185,55 @@
     </p>
     <button class="about-me-button">Get My Resume</button>
     <div class="about-me-line"></div>
-    <ul class="about-me-lists">
-      <li class="about-me-list-header">
-        <div class="star"></div>
-        <h1>Language</h1>
-      </li>
-      <li class="about-me-list-item">Javascript</li>
-      <li class="about-me-list-item">Ruby</li>
-      <li class="about-me-list-item">Html</li>
-      <li class="about-me-list-item">Css</li>
-    </ul>
-    <ul class="about-me-lists">
-      <li class="about-me-list-header">
-        <div class="square"></div>
-        <h1>Frameworks</h1>
-      </li>
-      <li class="about-me-list-item">Bootstrap</li>
-      <li class="about-me-list-item">Ruby on Rails</li>
-      <li class="about-me-list-item">RSpec</li>
-      <li class="about-me-list-item">CapyBara</li>
-      <li class="about-me-list-item">Selenium</li>
-    </ul>
-    <ul class="about-me-lists">
-      <li class="about-me-list-header">
-        <div class="circle"></div>
-        <h1>Skills</h1>
-      </li>
-      <li class="about-me-list-item">Codekit</li>
-      <li class="about-me-list-item">Github</li>
-      <li class="about-me-list-item">Codepen</li>
-      <li class="about-me-list-item">Gitlab</li>
-      <li class="about-me-list-item">Terminal</li>
-    </ul>
-
+    <div class="about-me-lists-container">
+      <ul class="about-me-lists">
+        <li class="about-me-list-header">
+          <div class="star"></div>
+          <h1>Language</h1>
+        </li>
+        <li class="about-me-list-item">Javascript</li>
+        <li class="about-me-list-item">Ruby</li>
+        <li class="about-me-list-item">Html</li>
+        <li class="about-me-list-item">Css</li>
+      </ul>
+      <ul class="about-me-lists">
+        <li class="about-me-list-header">
+          <div class="square"></div>
+          <h1>Frameworks</h1>
+        </li>
+        <li class="about-me-list-item">Bootstrap</li>
+        <li class="about-me-list-item">Ruby on Rails</li>
+        <li class="about-me-list-item">RSpec</li>
+        <li class="about-me-list-item">CapyBara</li>
+        <li class="about-me-list-item">Selenium</li>
+      </ul>
+      <ul class="about-me-lists">
+        <li class="about-me-list-header">
+          <div class="circle"></div>
+          <h1>Skills</h1>
+        </li>
+        <li class="about-me-list-item">Codekit</li>
+        <li class="about-me-list-item">Github</li>
+        <li class="about-me-list-item">Codepen</li>
+        <li class="about-me-list-item">Gitlab</li>
+        <li class="about-me-list-item">Terminal</li>
+      </ul>
+    </div>
   </section>
   <section class="contact-form">
     <form class="my-form" action="https://formspree.io/f/mrgdbqpg" method="POST">
-      <p class="contact-form-content">I'm always interested in hearing about new projects, so if you'd like to chat
+      <p class="contact-form-content">
+        I'm always interested in hearing about new projects, so if you'd like to chat
         please get in touch.</p>
-      <input class="contact-form-name" type="text" name="name" placeholder="Full name" maxlength="30" required>
-      <input class="contact-form-email" type="email" name="email" placeholder="Email address" required>
-      <textarea class="contact-form-message" rows="3" name="message" placeholder="Enter text here" maxlength="500" required></textarea>
-      <button class="contact-form-button" type="submit">Get in touch</button>
+      <div class="contact-form-inputs">
+        <input class="contact-form-name" type="text" name="name" placeholder="Full name"
+          maxlength="30" required>
+        <input class="contact-form-email" type="email" name="email" 
+          placeholder="Email address" required>
+        <textarea class="contact-form-message" rows="3" name="message" 
+          placeholder="Enter text here" maxlength="500" required></textarea>
+        <button class="contact-form-button" type="submit">Get in touch</button>
+      </div>
     </form>
   </section>
   <footer>

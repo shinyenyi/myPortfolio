@@ -11,9 +11,9 @@
 - Frameworks: N/A
 - Technologies used: npm
 
-<!-- ## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com) -->
+[Live Demo Link](https://shinyenyi.github.io/myPortfolio/)
 
 
 ## Getting Started

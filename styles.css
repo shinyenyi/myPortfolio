@@ -47,10 +47,10 @@ body {
 }
 
 .multi-post-stories-content,
-.multi-post-stories-languages .language p,
+.works-project-languages .language,
+.multi-post-stories-languages .languages .language,
 .multi-post-stories-button,
 .works-project-content,
-.works-project-languages .language,
 .works-project-button,
 .about-me-content,
 .about-me-button,
@@ -227,12 +227,26 @@ body {
   display: flex;
 }
 
-.multi-post-stories-languages ul {
+.multi-post-stories-languages .languages {
   list-style: none;
   width: 100%;
   align-items: flex-start;
   display: flex;
   margin-bottom: 12px;
+}
+
+.multi-post-stories-languages .languages .language {
+  padding: 10px 12px;
+  margin-right: 12px;
+  width: fit-content;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #8993a4;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
 }
 
 .my-job-description:hover,
@@ -824,7 +838,7 @@ footer {
 
   .multi-post-stories-languages .languages .language {
     padding: 10px 12px;
-    margin-right: 12px !important;
+    margin-right: 12px;
     width: fit-content;
     height: 40px;
     background: #fff;
@@ -972,7 +986,7 @@ footer {
     padding-right: 110px;
     background-image: url(images/Frame-destop-size.svg);
     background-repeat: no-repeat;
-    background-position: right bottom 650px;
+    background-position: right bottom 550px;
   }
 
   .contact-form {

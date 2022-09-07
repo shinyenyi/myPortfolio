@@ -9,11 +9,11 @@
   <title>My Portfolio</title>
 </head>
 
-<body>
-  <header class="header">
+<body class="body" id="body">
+  <header id="header" class="header">
     <nav class="nav-bar">
       <span class="name"><a href="#">Miguel</a></span>
-      <span class="menu-icon"><img src="images/menu.svg" alt="menu icon"></span>
+      <span class="menu-icon"><img id="menu-icon" src="images/menu.svg" alt="menu icon"></span>
       <div class="menu">
         <ul>
           <li><a href="#">Portfolio</a></li>
@@ -24,7 +24,25 @@
       </div>
     </nav>
   </header>
-  <section class="headline">
+  <div id="mobile-menu" class="displayNone">
+    <ul class="mobile-menu-list">
+      <li class="mobile-menu-icon">
+        <a class="x-menu-icon" id="x-menu-icon" href="#">
+          <img src="images/x-menu.svg" alt="menu icon">
+        </a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-item-1" id="mobile-menu-item-1" href="#works">Portfolio</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-item-2" id="mobile-menu-item-2" href="#about-me">About</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-item-3" id="mobile-menu-item-3" href="#contact-form">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <section id="headline" class="headline">
     <div class="headline-content">
       <h1 class="greetings">Hey There. <br>I’m Miguel</h1>
       <p class="my-job-title">I’am a Software Developer</p>
@@ -54,7 +72,7 @@
       </ul>
     </div>
   </section>
-  <section class="works">
+  <section id="works" class="works">
     <ul class="works-grid">
       <li class="works-title">
         <div class="works-title-container">
@@ -175,7 +193,7 @@
       </li>
     </ul>
   </section>
-  <section class="about-me">
+  <section id="about-me" class="about-me">
     <h1 class="about-me-title">About me</h1>
     <p class="about-me-content">
       Hello I’m a software developer! I can help you build a product ,
@@ -220,18 +238,16 @@
       </ul>
     </div>
   </section>
-  <section class="contact-form">
+  <section id="contact-form" class="contact-form">
     <form class="my-form" action="https://formspree.io/f/mrgdbqpg" method="POST">
       <p class="contact-form-content">
         I'm always interested in hearing about new projects, so if you'd like to chat
         please get in touch.</p>
       <div class="contact-form-inputs">
-        <input class="contact-form-name" type="text" name="name" placeholder="Full name"
-          maxlength="30" required>
-        <input class="contact-form-email" type="email" name="email" 
-          placeholder="Email address" required>
-        <textarea class="contact-form-message" rows="3" name="message" 
-          placeholder="Enter text here" maxlength="500" required></textarea>
+        <input class="contact-form-name" type="text" name="name" placeholder="Full name" maxlength="30" required>
+        <input class="contact-form-email" type="email" name="email" placeholder="Email address" required>
+        <textarea class="contact-form-message" rows="3" name="message" placeholder="Enter text here" maxlength="500"
+          required></textarea>
         <button class="contact-form-button" type="submit">Get in touch</button>
       </div>
     </form>
@@ -255,6 +271,7 @@
       </li>
     </ul>
   </footer>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

@@ -53,11 +53,12 @@ body {
 .modal-image {
   background-image: url(images/modal-image.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   min-width: 311px;
   min-height: 220px;
   width: 100%;
   height: 100%;
+  margin-right: 24px;
 }
 
 .mobile-menu-item {
@@ -207,6 +208,7 @@ body {
 }
 
 .modal {
+  width: 90%;
   padding: 16px;
   background: #fff;
   border: 1px solid #dfe1e6;
@@ -243,6 +245,7 @@ body {
 .modal-title {
   display: flex;
   justify-content: space-between;
+  padding-right: 15px;
   margin-bottom: 35px;
 }
 
@@ -260,6 +263,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
+  max-width: 311px;
 }
 
 .modal-buttons {
@@ -268,9 +272,9 @@ body {
 
 .see-live,
 .see-source {
+  width: fit-content;
   border: none;
   display: flex;
-  align-items: flex-start;
   padding: 12px;
   gap: 12px;
   margin-right: 12px;
@@ -288,6 +292,7 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
+  width: fit-content;
   color: #fff;
 }
 
@@ -300,6 +305,21 @@ body {
   color: #172b4d;
 }
 
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  overflow: auto;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
 .works {
   background-color: #e5e5e5;
   padding-left: 24px;
@@ -307,7 +327,7 @@ body {
   width: 100%;
 }
 
-.works ul {
+.works .works-grid {
   width: 100%;
   list-style: none;
   display: grid;
@@ -836,9 +856,31 @@ footer {
     flex-direction: row;
   }
 
+  .modal-title {
+    margin-bottom: 12px;
+  }
+
+  .modal-header {
+    margin-bottom: 20px;
+  }
+
+  .modal-container {
+    justify-content: space-between;
+  }
+
+  .modal-content {
+    margin-top: 0;
+    line-height: 30px;
+    max-width: 424px;
+    margin-bottom: 60px;
+  }
+
   .modal-image {
     min-width: 400px;
-    min-height: 320px;
+    min-height: 340px;
+    width: 100%;
+    height: auto;
+    background-size: cover;
   }
 
   .menu ul {
@@ -847,7 +889,6 @@ footer {
   }
 
   * {
-    border: 1px solid red;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -1145,6 +1186,20 @@ footer {
   .multi-post-stories-image {
     width: 684px;
     height: 448px;
+  }
+
+  .modal-image {
+    width: 659px;
+    max-height: 448px;
+  }
+
+  .modal-background {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .modal {
+    width: 70%;
   }
 
   .about-me {

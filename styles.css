@@ -305,7 +305,7 @@ body {
   color: #172b4d;
 }
 
-.modal-background{
+.modal-background {
   position: fixed;
   top: 0;
   left: 0;
@@ -856,19 +856,19 @@ footer {
     flex-direction: row;
   }
 
-  .modal-title{
+  .modal-title {
     margin-bottom: 12px;
   }
 
-  .modal-header{
+  .modal-header {
     margin-bottom: 20px;
   }
 
-  .modal-container{
+  .modal-container {
     justify-content: space-between;
   }
 
-  .modal-content{
+  .modal-content {
     margin-top: 0;
     line-height: 30px;
     max-width: 424px;
@@ -1193,12 +1193,12 @@ footer {
     max-height: 448px;
   }
 
-  .modal-background{
+  .modal-background {
     padding-top: 50px;
     padding-bottom: 50px;
   }
 
-  .modal{
+  .modal {
     width: 70%;
   }
 

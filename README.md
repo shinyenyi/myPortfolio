@@ -40,6 +40,10 @@ clone the project then run: npm install
 
 - GitHub: [@Khaled](https://github.com/Khaled-AlKhateeb)
 
+👤 **Author2**
+
+- GitHub: [@UmerZia](https://github.com/UmerZia)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

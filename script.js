@@ -207,9 +207,3 @@ function createModal(index) {
   const modalBackgroung = document.querySelector('.modal-background');
   modalBackgroung.style.display = 'flex';
 }
-
-const closeModal = document.getElementById('closeModal');
-closeModal.onclick = () => {
-  const modalBackgroung = document.querySelector('.modal-background');
-  modalBackgroung.style.display = 'none';
-};

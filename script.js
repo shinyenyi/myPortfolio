@@ -215,6 +215,14 @@ closeModal.onclick = () => {
 };
 
 const email = document.querySelector('.contact-form-email');
+const username = document.querySelector('.contact-form-name');
+const usermessage = document.querySelector('.contact-form-message');
+
+let formData = {
+  email: '',
+  username: '',
+  usermessage: '',
+};
 
 const errorMessage = document.querySelector('.error-message');
 const form = document.querySelector('.my-form');
@@ -227,4 +235,26 @@ form.addEventListener('submit', (event) => {
 
 email.addEventListener('input', () => {
   errorMessage.style.display = 'none';
+  formData.email = email.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+username.addEventListener('input', () => {
+  formData.username = username.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+usermessage.addEventListener('input', () => {
+  formData.usermessage = usermessage.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  formData = JSON.parse(localStorage.getItem('formData') || '{}');
+
+  document.querySelector('.contact-form-email').value = formData.email;
+
+  document.querySelector('.contact-form-name').value = formData.username;
+
+  document.querySelector('.contact-form-message').value = formData.usermessage;
 });

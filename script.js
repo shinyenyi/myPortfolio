@@ -214,6 +214,7 @@ closeModal.onclick = () => {
   modalBackgroung.style.display = 'none';
 };
 
+// Local Storage
 const email = document.querySelector('.contact-form-email');
 const username = document.querySelector('.contact-form-name');
 const usermessage = document.querySelector('.contact-form-message');
@@ -244,11 +245,7 @@ username.addEventListener('input', () => {
   localStorage.setItem('formData', JSON.stringify(formData));
 });
 
-usermessage.addEventListener('input', () => {
-  formData.usermessage = usermessage.value;
-  localStorage.setItem('formData', JSON.stringify(formData));
-});
-
+//Render the data from local storage
 window.addEventListener('DOMContentLoaded', () => {
   formData = JSON.parse(localStorage.getItem('formData') || '{}');
   if (formData.email) {
@@ -260,4 +257,9 @@ window.addEventListener('DOMContentLoaded', () => {
   if (formData.usermessage) {
     document.querySelector('.contact-form-message').value = formData.usermessage;
   }
+});
+
+usermessage.addEventListener('input', () => {
+  formData.usermessage = usermessage.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
 });

@@ -245,7 +245,7 @@ username.addEventListener('input', () => {
   localStorage.setItem('formData', JSON.stringify(formData));
 });
 
-//Render the data from local storage
+// Render the data from local storage
 window.addEventListener('DOMContentLoaded', () => {
   formData = JSON.parse(localStorage.getItem('formData') || '{}');
   if (formData.email) {

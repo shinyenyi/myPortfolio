@@ -213,3 +213,18 @@ closeModal.onclick = () => {
   const modalBackgroung = document.querySelector('.modal-background');
   modalBackgroung.style.display = 'none';
 };
+
+const email = document.querySelector('.contact-form-email');
+
+const errorMessage = document.querySelector('.error-message');
+const form = document.querySelector('.my-form');
+form.addEventListener('submit', (event) => {
+  if (!(email.value === String(email.value).toLocaleLowerCase())) {
+    errorMessage.style.display = 'inline';
+    event.preventDefault();
+  }
+});
+
+email.addEventListener('input', () => {
+  errorMessage.style.display = 'none';
+});

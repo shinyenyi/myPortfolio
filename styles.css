@@ -270,6 +270,12 @@ body {
   display: flex;
 }
 
+.error-message {
+  display: none;
+  font-family: 'Inter', serif;
+  color: red;
+}
+
 .see-live,
 .see-source {
   width: fit-content;

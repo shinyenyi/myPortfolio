@@ -251,10 +251,13 @@ usermessage.addEventListener('input', () => {
 
 window.addEventListener('DOMContentLoaded', () => {
   formData = JSON.parse(localStorage.getItem('formData') || '{}');
-
-  document.querySelector('.contact-form-email').value = formData.email;
-
-  document.querySelector('.contact-form-name').value = formData.username;
-
-  document.querySelector('.contact-form-message').value = formData.usermessage;
+  if (formData.email) {
+    document.querySelector('.contact-form-email').value = formData.email;
+  }
+  if (formData.username) {
+    document.querySelector('.contact-form-name').value = formData.username;
+  }
+  if (formData.usermessage) {
+    document.querySelector('.contact-form-message').value = formData.usermessage;
+  }
 });

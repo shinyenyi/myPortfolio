@@ -214,7 +214,16 @@ closeModal.onclick = () => {
   modalBackgroung.style.display = 'none';
 };
 
+// Local Storage
 const email = document.querySelector('.contact-form-email');
+const username = document.querySelector('.contact-form-name');
+const usermessage = document.querySelector('.contact-form-message');
+
+let formData = {
+  email: '',
+  username: '',
+  usermessage: '',
+};
 
 const errorMessage = document.querySelector('.error-message');
 const form = document.querySelector('.my-form');
@@ -227,4 +236,30 @@ form.addEventListener('submit', (event) => {
 
 email.addEventListener('input', () => {
   errorMessage.style.display = 'none';
+  formData.email = email.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+username.addEventListener('input', () => {
+  formData.username = username.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+// Render the data from local storage
+window.addEventListener('DOMContentLoaded', () => {
+  formData = JSON.parse(localStorage.getItem('formData') || '{}');
+  if (formData.email) {
+    document.querySelector('.contact-form-email').value = formData.email;
+  }
+  if (formData.username) {
+    document.querySelector('.contact-form-name').value = formData.username;
+  }
+  if (formData.usermessage) {
+    document.querySelector('.contact-form-message').value = formData.usermessage;
+  }
+});
+
+usermessage.addEventListener('input', () => {
+  formData.usermessage = usermessage.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
 });
